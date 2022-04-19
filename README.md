@@ -4,6 +4,7 @@ It always starts at the root server, traversing until the A record for the domai
 The tool also resolves if the domain has a CNAME record by applying the same logic to the CNAME target
 
 ## Simple example
+Note the "." in the end of the domain name
 ```go
 $ go run trace.go www.google.com.
 
