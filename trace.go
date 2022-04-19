@@ -30,7 +30,7 @@ func runQuery(domain string) (ipv4 net.IP) {
 }
 
 func runQueryWithServer(c *dns.Client, domain string, server string) (ipv4 net.IP) {
-	fmt.Printf("INFO: Run domain --> IP query for %s with server %s\n", domain, server)
+	fmt.Printf("\nResolving domain -> IP query for domain=%s with nameserver=%s\n", domain, server)
 	in, _, err := c.Exchange(buildQuery(domain), server)
 	if err != nil {
 		fmt.Println(err.Error())
