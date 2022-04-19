@@ -1,10 +1,10 @@
 # dns-trace
-A simple tool to recursively resolves IP for a given domain
-It always starts at the root server, traversing until the A record for the domain is found
-The tool also resolves if the domain has a CNAME record by applying the same logic to the CNAME target
+A simple tool to recursively resolves IP for a given domain.
+It always starts at the root server, traversing until the `A` record for the domain is found.
+The tool also resolves if the domain has a CNAME record by applying the same logic to the CNAME target.
 
 ## Simple example
-Note the "." in the end of the domain name
+Note the "." in the end of the domain name i.e. Domain name should be [fully qualified](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)
 ```go
 $ go run trace.go www.google.com.
 
