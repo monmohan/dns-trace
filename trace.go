@@ -8,9 +8,6 @@ import (
 	"github.com/miekg/dns"
 )
 
-var ErrNoAnswer = fmt.Errorf("No Answer Section")
-var ErrNoAuthority = fmt.Errorf("No Authority Section")
-
 func main() {
 	if len(os.Args) != 2 {
 		fmt.Println("Usage: $ go run trace.go <domain>")
